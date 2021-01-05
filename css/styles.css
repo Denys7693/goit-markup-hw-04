@@ -131,7 +131,7 @@ img {
   box-sizing: border-box;
 }
 
-.navigation-list-link::after {
+.link-active::after {
   content: "";
   display: block;
   width: 100%;
