@@ -14,10 +14,10 @@
     <header class="header container">
         <div class="container">
             <nav class="navigation">
-                <a class="logo link" href="/" aria-label="логотип сайта"><span class="logo-half">Web</span>Studio</a>
+                <a class="logo link" href="index.html" aria-label="логотип сайта"><span class="logo-half">Web</span>Studio</a>
                 <ul class="navigation-list list">
                     <li class="navigation-list-item">
-                        <a class="navigation-list-link link" href="index.html">Студия</a>
+                        <a class="navigation-list-link link-active link" href="index.html">Студия</a>
                     </li>
                     <li class="navigation-list-item">
                         <a class="navigation-list-link link" href="portfolio.html">Портфолио</a>
@@ -57,7 +57,7 @@
         <section class="hero">
             <div class="hero-side container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn btn" type="button">Заказать услугу</button>
+                <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- ABOUT -->
@@ -114,13 +114,22 @@
             <div class="whotdo-side container">
                 <ul class="whotdo-side-list list">
                     <li class="whotdo-navigation">
-                        <img class="whotdo-img1" src="./images/about/img1.jpg" alt="человек пишет код"  width="370" height="295">
+                        <div class="card-function">
+                            <img class="whotdo-img1" src="./images/about/img1.jpg" alt="человек пишет код"  width="370" height="295">
+                            <p class="function-overlay">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="whotdo-navigation">
-                        <img class="whotdo-img2" src="./images/about/img2.jpg" alt="человек смотрит на телефон" width="370" height="295">
+                        <div class="card-function">                        
+                            <img class="whotdo-img2" src="./images/about/img2.jpg" alt="человек смотрит на телефон" width="370" height="295">
+                            <p class="function-overlay">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="whotdo-navigation">
-                        <img class="whotdo-img3" src="./images/about/img3.jpg" alt="человек с планшетом" width="370" height="295">
+                        <div class="card-function">
+                            <img class="whotdo-img3" src="./images/about/img3.jpg" alt="человек с планшетом" width="370" height="295">
+                            <p class="function-overlay">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>    
@@ -137,28 +146,28 @@
                         <p class="masters-p" lang="en">Product Designer</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon" >
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>
                                 </a>                                
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>                                
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>                             
                             </li>
                             <li class="social-list-item">                              
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
@@ -172,28 +181,28 @@
                         <p class="masters-p" lang="en">Frontend Developer</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
@@ -207,28 +216,28 @@
                         <p class="masters-p" lang="en">Marketing</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
@@ -242,28 +251,28 @@
                         <p class="masters-p" lang="en">UI Designer</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-list-item">
-                                <a class="social-list-link" href="">
+                                <a class="social-list-link" href="#">
                                     <svg class="social-list-icon">
                                         <use class="social-svg-icon" href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>
@@ -278,37 +287,49 @@
         <!--REGULAR CUSTOMERS--> 
         <section class="regcus">
             <h2 class="regcus-side-title">Постояные клиенты</h2>
-            <div class="regcus-side container">
-                <ul class="regcus-side-list list">
+            <div class="regcus-side container">                
+                <ul class="regcus-side-list list container">
                     <li class="regcus-navigation">
-                        <svg class="regcus-list-icon">
-                            <use href="./images/sprite.svg#icon-logo1"></use>
-                        </svg>
+                        <a href="#" class="clients-links">
+                            <svg class="regcus-list-icon1">
+                                <use href="./images/sprite.svg#icon-logo1"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="regcus-navigation">
-                        <svg class="regcus-list-icon">
-                            <use href="./images/sprite.svg#icon-logo2"></use>
-                        </svg>
+                        <a href="#" class="clients-links">
+                            <svg class="regcus-list-icon2">
+                                <use href="./images/sprite.svg#icon-logo2"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="regcus-navigation">
-                        <svg class="regcus-list-icon">
-                            <use href="./images/sprite.svg#icon-logo3"></use>
-                        </svg>
+                        <a href="#" class="clients-links">
+                            <svg class="regcus-list-icon3">
+                                <use href="./images/sprite.svg#icon-logo3"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="regcus-navigation">
-                        <svg class="regcus-list-icon">
-                            <use href="./images/sprite.svg#icon-logo4"></use>
-                        </svg>
+                        <a href="#" class="clients-links">
+                            <svg class="regcus-list-icon4">
+                                <use href="./images/sprite.svg#icon-logo4"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="regcus-navigation">
-                        <svg class="regcus-list-icon">
-                            <use href="./images/sprite.svg#icon-logo5"></use>
-                        </svg>
+                        <a href="#" class="clients-links">
+                            <svg class="regcus-list-icon5">
+                                <use href="./images/sprite.svg#icon-logo5"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="regcus-navigation">
-                        <svg class="regcus-list-icon">
-                            <use href="./images/sprite.svg#icon-logo6"></use>
-                        </svg>
+                        <a href="#" class="clients-links">
+                            <svg class="regcus-list-icon6">
+                                <use href="./images/sprite.svg#icon-logo6"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -317,47 +338,67 @@
 
         <!--CONTAKT-->
         <footer class="contakt">
-            <div class="contakt-div container">
-                <a class="contakt-logo link" href="/" aria-label="логотип сайта"><span class="logo-half">Web</span>Studio</a>
-                <ul class="contakt-side list">
-                    <li class="contakt-list">
-                        <a class="contakt-map link" href="https://goo.gl/maps/9d3zrv8kZXbxStkZ6" target="_blunk">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="contakt-list">
-                        <a class="contakt-mail-tel link" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="contakt-list">
-                        <a class="contakt-mail-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact-welcome container">
-                <p class="contact-welcome-title">ПРИСОЕДИНЯЙТЕСЬ</p>                   
-                <ul class="welcome-side list">
-                    <li class="welcome-list">
-                        <svg class="welcome-list-icon">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </li>
-                    <li class="welcome-list">
-                        <svg class="welcome-list-icon">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </li>
-                    <li class="welcome-list">
-                        <svg class="welcome-list-icon">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </li>
-                    <li class="welcome-list">
-                        <svg class="welcome-list-icon">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </li>
-                </ul>
-                
+            <div class="contact-block container">
+                <div class="contakt-div">
+                    <a class="contakt-logo link" href="./index.html" aria-label="логотип сайта"><span class="logo-half">Web</span>Studio</a>
+                    <ul class="contakt-side list">
+                        <li class="contakt-list">
+                            <a class="contakt-map link" href="https://goo.gl/maps/9d3zrv8kZXbxStkZ6" target="_blunk">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="contakt-list">
+                            <a class="contakt-mail-tel link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="contakt-list">
+                            <a class="contakt-mail-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-welcome">
+                    <p class="contact-welcome-title">ПРИСОЕДИНЯЙТЕСЬ</p>                   
+                    <ul class="welcome-side list">
+                        <li class="welcome-list">
+                            <a href="#" class="welcome-links">
+                                <svg class="welcome-list-icon">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="welcome-list">
+                            <a href="#" class="welcome-links">
+                                <svg class="welcome-list-icon">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="welcome-list">
+                            <a href="#" class="welcome-links">
+                                <svg class="welcome-list-icon">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="welcome-list">
+                            <a href="#" class="welcome-links">
+                                <svg class="welcome-list-icon">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
             </div>
         </footer>
-    </main>    
+    </main>  
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop-modal">
+            <button type="backdrop-modal-button" class="close-btn" data-modal-close>
+                <svg class="backdrop-svg">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>  
+    <script src="./js/modal.js"></script>
 </body>
 </html>
