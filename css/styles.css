@@ -130,7 +130,8 @@ img {
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .address-mail-tel:hover,
-.address-mail-tel:focus .address-icon:hover,
+.address-mail-tel:focus,
+.address-icon:hover,
 .address-icon:focus {
   color: #2196f3;
   fill: currentColor;
@@ -422,6 +423,7 @@ img {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: #2196f3;
+  color: white;
 }
 
 .social-list-link:hover .social-list-icon {
