@@ -100,7 +100,9 @@ img {
 .address-mail-tel:focus {
   color: var(--blue-color);
 }
-
+.address-icon {
+  color: #757575;
+}
 /* ----------end header---------- */
 
 /* ----------main---------- */
