@@ -422,6 +422,8 @@ img {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -450,5 +452,68 @@ img {
 .contakt-mail-tel:hover,
 .contakt-mail-tel:focus {
   color: var(--white-color);
+}
+
+/* ----------contact-welcome---------- */
+
+.contact-welcome {
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.welcome-side {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.contact-welcome-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.welcome-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-right: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome-links:hover,
+.welcome-links:focus {
+  background-color: #2196f3;
+}
+
+.welcome-links:hover .welcome-list-icon {
+  fill: white;
+}
+
+.welcome-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.welcome-links {
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
 }
 /* ----------end footer---------- */ ;
