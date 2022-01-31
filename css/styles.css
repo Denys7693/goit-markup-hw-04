@@ -131,6 +131,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  height: 600px;
 }
 .hero {
   background-image: linear-gradient(
@@ -139,7 +140,9 @@ img {
     ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   margin-top: 0;
@@ -177,26 +180,19 @@ img {
 .solutions .solutions-li:not(:last-child) {
   margin-right: 30px;
 }
-.solutions-li::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-size: contain;
-  background-position: center;
+
+.about-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+
+.about-icon {
+  padding: 25px 100px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-}
-.antenna::before {
-  background-image: url("../images/icon/symbol-defs.svg#icon-antenna");
-}
-.clock::before {
-  background-image: url("../images/icon/symbol-defs.svg#icon-clock");
-}
-.diagram::before {
-  background-image: url("../images/icon/symbol-defs.svg#icon-diagram");
-}
-.astronaut::before {
-  background-image: url("../images/icon/symbol-defs.svg#icon-astronaut");
 }
 .about-title {
   font-weight: bold;
