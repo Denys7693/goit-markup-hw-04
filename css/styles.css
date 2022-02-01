@@ -95,6 +95,8 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  align-items: center;
 }
 .address-mail-tel:hover,
 .address-mail-tel:focus,
@@ -110,7 +112,6 @@ img {
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
-  color: #757575;
 }
 
 .address-icon-smartphone {
@@ -118,7 +119,6 @@ img {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-  color: #757575;
 }
 /* ----------end header---------- */
 
@@ -131,7 +131,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  height: 600px;
 }
 .hero {
   background-image: linear-gradient(
@@ -190,9 +189,12 @@ img {
 }
 
 .about-icon {
-  padding: 25px 100px;
+  height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-title {
   font-weight: bold;
@@ -268,7 +270,7 @@ img {
 .masters-img {
 }
 .masters-div {
-  padding: 30px 20px;
+  padding: 30px 32px;
 }
 .masters-h3 {
   font-weight: 500;
@@ -292,7 +294,6 @@ img {
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 206px;
   margin: 10px auto 0;
 }
 .social-list-item {
@@ -340,11 +341,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0;
   margin-bottom: 50px;
-}
-
-.regcus .container {
-  display: flex;
 }
 
 .regcus-side {
@@ -387,41 +385,12 @@ img {
   border: 1px solid #2196f3;
 }
 
-.regcus-list-icon1 {
-  width: 44.27px;
-  height: 49.23px;
+.regcus-list-icon {
+  width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 
-.regcus-list-icon2 {
-  width: 40px;
-  height: 52px;
-  fill: currentColor;
-}
-
-.regcus-list-icon3 {
-  width: 41px;
-  height: 42.6px;
-  fill: currentColor;
-}
-
-.regcus-list-icon4 {
-  width: 79.66px;
-  height: 42.02px;
-  fill: currentColor;
-}
-
-.regcus-list-icon5 {
-  width: 59px;
-  height: 47px;
-  fill: currentColor;
-}
-
-.regcus-list-icon6 {
-  width: 88.48px;
-  height: 45.44px;
-  fill: currentColor;
-}
 /* ----------end main---------- */
 
 /* ----------footer---------- */
@@ -479,7 +448,9 @@ img {
   justify-content: flex-start;
   padding: 0;
 }
-
+.mr10 {
+  margin-right: 10px;
+}
 .contact-welcome-title {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -500,8 +471,12 @@ img {
   width: 44px;
   height: 44px;
   padding: 0;
-  margin-right: 10px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .welcome-links:hover,
@@ -517,13 +492,5 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.welcome-links {
-  border: none;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms var(--timing-function);
 }
 /* ----------end footer---------- */ ;
