@@ -448,7 +448,7 @@ img {
   justify-content: flex-start;
   padding: 0;
 }
-.mr10 {
+.welcome-list:not(:last-child) {
   margin-right: 10px;
 }
 .contact-welcome-title {
